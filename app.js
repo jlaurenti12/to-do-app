@@ -14,10 +14,7 @@ function onReady() {
 
       renderTheUI(toDos);
 
-    }
-
-
-    function renderTheUI(todos) {
+    function renderTheUI(toDos) {
       var toDoList = document.getElementById('toDoList');
 
       toDoList.innerHTML = '';

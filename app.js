@@ -4,7 +4,7 @@ function onReady() {
   const toDoList = document.getElementById('toDoList');
 
   addToDoForm.addEventListener('submit', (event) => {
-      event.preventDefault();
+    event.preventDefault();
 
       // get the text
       let title = newToDoText.value;
@@ -14,6 +14,11 @@ function onReady() {
 
       // create a new input for the checkbox
       let checkbox = document.createElement('input');
+
+      let remove = document.createElement('button');
+        remove.innerHTML = 'Remove Item';
+        remove.style.color = 'white';
+        remove.style.backgroundColor = 'red';
 
       // set the input's type to checkbox
       checkbox.type = "checkbox";
@@ -27,10 +32,17 @@ function onReady() {
       // attach the checkbox to the li
       newLi.appendChild(checkbox);
 
+      // attach a delete button to the li
+      newLi.appendChild(remove);
+      remove.addEventListener('click', function() {
+        newLi.parentNode.removeChild(newLi)
+      });
+
       //empty the input
       newToDoText.value = '';
     });
   }
+
 
 
   window.onload = function() {

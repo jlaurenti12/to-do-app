@@ -51,7 +51,6 @@ function onReady() {
       createNewToDo();
     });
 
-
     renderTheUI(toDos);
 }
 

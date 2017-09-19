@@ -10,10 +10,10 @@ function onReady() {
       });
       newToDoText.value = '';
 
-      renderTheUI(todos);
+      renderTheUI(toDos);
     }
 
-    function renderTheUI(todos) {
+    function renderTheUI(toDos) {
       var toDoList = document.getElementById('toDoList');
 
       toDoList.innerHTML = '';
@@ -35,7 +35,7 @@ function onReady() {
     });
 
 
-    renderTheUI(todos);
+    renderTheUI(toDos);
 
   }
 

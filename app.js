@@ -53,7 +53,6 @@ function onReady() {
 
 
     renderTheUI(toDos);
-
 }
 
   window.onload = function() {

@@ -13,6 +13,8 @@ function onReady() {
       newToDoText.value = '';
 
       renderTheUI(toDos);
+    }
+
 
     }
 
@@ -44,7 +46,6 @@ function onReady() {
         toDos.pop(newLi);
         });
       });
-
     }
 
     addToDoForm.addEventListener('submit', function(event) {
@@ -54,7 +55,6 @@ function onReady() {
 
 
     renderTheUI(toDos);
-
 }
 
   window.onload = function() {

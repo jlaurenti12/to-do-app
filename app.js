@@ -11,6 +11,7 @@ function onReady() {
       newToDoText.value = '';
 
       renderTheUI(toDos);
+      
     }
 
     function renderTheUI(toDos) {

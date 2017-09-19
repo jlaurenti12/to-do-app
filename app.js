@@ -13,7 +13,6 @@ function onReady() {
       newToDoText.value = '';
 
       renderTheUI(toDos);
-
     }
 
 

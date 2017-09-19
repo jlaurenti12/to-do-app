@@ -13,15 +13,10 @@ function onReady() {
       newToDoText.value = '';
 
       renderTheUI(toDos);
-<<<<<<< HEAD
     }
 
 
-    function renderTheUI(todos) {
-=======
-
     function renderTheUI(toDos) {
->>>>>>> 1e3afbed7d0c6f875c6e9151ef06a705bb8c0aba
       var toDoList = document.getElementById('toDoList');
 
       toDoList.innerHTML = '';

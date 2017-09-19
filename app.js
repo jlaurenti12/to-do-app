@@ -44,7 +44,6 @@ function onReady() {
         toDos.pop(newLi);
         });
       });
-
     }
 
     addToDoForm.addEventListener('submit', function(event) {

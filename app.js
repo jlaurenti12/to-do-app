@@ -3,34 +3,36 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
-  addTodoForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+  addToDoForm.addEventListener('submit', (event) => {
+      event.preventDefault();
 
-    // get the text
-    let title = newToDoText.value;
+      // get the text
+      let title = newToDoText.value;
 
-    // create a new li
-   let newLi = document.createElement('li');
+      // create a new li
+      let newLi = document.createElement('li');
 
-   // create a new input for the checkbox
-   let checkbox = document.createElement('input');
+      // create a new input for the checkbox
+      let checkbox = document.createElement('input');
 
-   // set the input's type to checkbox
-   checkbox.type = "checkbox";
+      // set the input's type to checkbox
+      checkbox.type = "checkbox";
 
-   // set the title
-   newLi.textContent = title;
+      // set the title
+      newLi.textContent = title;
 
-    // attach the checkbox to the li
-   newLi.appendChild(checkbox);
+      // attach it to the ul
+      toDoList.appendChild(newLi);
 
-   //empty the input
-   newToDoText.value = '';
-  });
-}
-}
+      // attach the checkbox to the li
+      newLi.appendChild(checkbox);
+
+      //empty the input
+      newToDoText.value = '';
+    });
+  }
 
 
-window.onload = function() {
-   onReady();
- };
+  window.onload = function() {
+     onReady();
+   };
